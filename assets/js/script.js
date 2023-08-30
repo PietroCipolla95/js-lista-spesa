@@ -6,17 +6,17 @@ Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che 
 */
 
 const list = [
-    'item_1',
-    'item_2',
-    'item_3',
-    'item_4',
-    'item_5',
-    'item_6',
-    'item_7',
-    'item_8',
-    'item_9',
-    'item_10',
-    'item_11',
+    'Pane',
+    'Pollo',
+    'Cereali',
+    'Dentifricio',
+    'Lenticchie',
+    'Gocciole',
+    'Latte',
+    'Salumi vari',
+    'Piadine',
+    'Bagnoschiuma',
+    'Patate Fritte',
 ]
 
 let i = 0; 
@@ -24,13 +24,11 @@ let i = 0;
 while (i < list.length) {
 
     let listItem = document.createElement('li');
+    let output = list[i];
+    listItem.append(output);
     document.getElementById('print').append(listItem);
-    document.writeln(list[i]); 
     i++
-    
 
-    
-   
 }
 
 
